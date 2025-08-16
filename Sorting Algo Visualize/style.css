@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.controls {
+  margin: 20px;
+}
+
+#array-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 400px;
+  margin-top: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.bar {
+  margin: 1px;
+  background-color: steelblue;
+  width: 20px;
+  transition: all 0.2s ease;
+}
+
+.bar.comparing {
+  background-color: red !important;
+}
+
+.bar.swapping {
+  background-color: yellow !important;
+}
+
+.bar.sorted {
+  background-color: green !important;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sorting Algorithm Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Sorting Algorithm Visualizer</h1>
+
+<div class="controls">
+  <label>Algorithm:</label>
+  <select id="algo">
+    <option value="bubble">Bubble Sort</option>
+    <option value="selection">Selection Sort</option>
+    <option value="insertion">Insertion Sort</option>
+    <option value="quick">Quick Sort</option>
+    <option value="merge">Merge Sort</option>
+  </select>
+
+  <label>Speed:</label>
+  <select id="speed">
+    <option value="200">Fast</option>
+    <option value="500">Medium</option>
+    <option value="1000">Slow</option>
+  </select>
+
+  <input type="text" id="custom-array" placeholder="Enter numbers comma separated">
+  <button onclick="generateArray()">Generate Array</button>
+  <button onclick="startSort()">Start</button>
+</div>
+
+<div id="array-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
